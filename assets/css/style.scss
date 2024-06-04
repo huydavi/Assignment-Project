@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+$color-sub: #88c8bc;
+$color-btn: #616161;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Rokkitt", serif;
+}
+
+.center-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color__sub {
+  background-color: $color-sub;
+}
+
+.header__icon {
+  width: 3.6rem;
+  height: 3.6rem;
+  background-color: #88c8bc;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: 2.2rem;
+}
+
+.hero {
+  .hero__desc {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    translate: 50% 50%;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    .head-1 {
+      font-size: 7rem;
+    }
+    .head-2 {
+      font-size: 3rem;
+      font-weight: 300;
+      letter-spacing: rem;
+      margin-top: 1rem;
+    }
+    .head-3 {
+      font-size: 7rem;
+      font-weight: 200;
+      margin-top: 1rem;
+      strong {
+        font-weight: 500;
+      }
+    }
+    .category {
+      font-size: 2rem;
+      font-weight: 100;
+      margin-top: 1rem;
+    }
+    .btn {
+      margin-top: 1rem;
+      height: 6rem;
+      width: 23rem;
+      border-radius: 3rem;
+      font-size: 1.6rem;
+      font-weight: 300;
+      background-color: $color-btn;
+      color: #fff;
+      translate: 3rem;
+      transition: all 0.25s ease-in;
+
+      &:hover {
+        background-color: #000;
+      }
+    }
+  }
+}
+
+.cta-group {
+  .btn {
+    margin-top: 8rem;
+    height: 6rem;
+    width: 20rem;
+    border-radius: 3rem;
+    font-size: 1.6rem;
+    font-weight: 300;
+    background-color: $color-btn;
+    color: #fff;
+    transition: all 0.25s ease-in;
+
+    &:hover {
+      background-color: #000;
+    }
+  }
+}
+
+footer {
+  .footer1__desc {
+    width: 200px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .item__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .brand__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .brand__item {
+      margin-bottom: 50px;
+    }
+  }
+  .footer__list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    .footer1__desc {
+      width: 100%;
+    }
+  }
+}

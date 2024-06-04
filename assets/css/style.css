@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Rokkitt", serif;
+}
+
+.center-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color__sub {
+  background-color: #88c8bc;
+}
+
+.header__icon {
+  width: 3.6rem;
+  height: 3.6rem;
+  background-color: #88c8bc;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: 2.2rem;
+}
+
+.hero .hero__desc {
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  translate: 50% 50%;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+.hero .hero__desc .head-1 {
+  font-size: 7rem;
+}
+.hero .hero__desc .head-2 {
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: rem;
+  margin-top: 1rem;
+}
+.hero .hero__desc .head-3 {
+  font-size: 7rem;
+  font-weight: 200;
+  margin-top: 1rem;
+}
+.hero .hero__desc .head-3 strong {
+  font-weight: 500;
+}
+.hero .hero__desc .category {
+  font-size: 2rem;
+  font-weight: 100;
+  margin-top: 1rem;
+}
+.hero .hero__desc .btn {
+  margin-top: 1rem;
+  height: 6rem;
+  width: 23rem;
+  border-radius: 3rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  background-color: #616161;
+  color: #fff;
+  translate: 3rem;
+  transition: all 0.25s ease-in;
+}
+.hero .hero__desc .btn:hover {
+  background-color: #000;
+}
+
+.cta-group .btn {
+  margin-top: 8rem;
+  height: 6rem;
+  width: 20rem;
+  border-radius: 3rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  background-color: #616161;
+  color: #fff;
+  transition: all 0.25s ease-in;
+}
+.cta-group .btn:hover {
+  background-color: #000;
+}
+
+footer .footer1__desc {
+  width: 200px;
+}
+
+@media (max-width: 991.98px) {
+  .item__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .brand__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .brand__list .brand__item {
+    margin-bottom: 50px;
+  }
+  .footer__list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer__list .footer1__desc {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
